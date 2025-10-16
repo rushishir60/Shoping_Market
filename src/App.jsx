@@ -18,7 +18,7 @@ import Herbs from "./assets/pages/Herbs";
 
 import Pulses from "./assets/pages/Pulses";
 import Snacks from "./assets/pages/Snacks";
-import Contact from "./assets/pages/Contact";
+
 import About from "./assets/pages/About";
 
 
@@ -41,7 +41,7 @@ function App() {
         <Route path="/grains" element={<Grains />} />
         <Route path="/dairy" element={<Dairy />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/contact" element={<Contact />} />
+      
         <Route path="/about" element={<About />} />
       </Routes>
       
