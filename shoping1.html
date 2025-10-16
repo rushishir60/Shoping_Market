@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/shoping.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="container-fluid " id="gotoHome">
+        <!-- navbar1 -->
+        <div class="row">
+            <div class="col-6">
+
+            </div>
+            <div class="col-6 py-2 btns">
+                <div class="form-check form-switch">
+                    <input class="form-check-input switchBtn" type="checkbox" id="flexSwitchCheckChecked" checked>
+                </div>
+                <i class="fa-solid fa-circle-user"></i>
+                <i class="fa-solid fa-language"></i>
+            </div>
+        </div>
+        <!-- navbar2 -->
+        <!-- navbarList -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid pb-5">
+                <a class="navbar-brand" href="#">
+                    <img src="images/agamiAgriLogo.png" alt="" width="250px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    style="width: 39px;padding-left: 4px;padding-right: 4px;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-5 " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
+                        <li class="nav-item navList">
+                            <a class="nav-link active fs-2 fw-semibold" aria-current="page" href="#gotoHome">Home</a>
+                        </li>
+                        <li class="nav-item dropdown navList">
+                            <a class="nav-link dropdown-toggle fs-2 fw-semibold " href="#servicesSection"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="vegetables.html">Vegetables</a></li>
+                                <li><a class="dropdown-item" href="fruits.html">Fruits</a></li>
+                                <li><a class="dropdown-item" href="dairy.html">Dairy Products</a></li>
+                                <li><a class="dropdown-item" href="dryfruits.html">Dry Fruits</a></li>
+                                <li><a class="dropdown-item" href="grains.html">Grains</a></li>
+                                <li><a class="dropdown-item" href="pulses.html">Pulses</a></li>
+                                <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
+                                <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>
+                                <li><a class="dropdown-item" href="herbs.html">Herbs & Spices</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item navList">
+                            <a class="nav-link active fs-2 fw-semibold " aria-current="page" href="#gotoAbout">About</a>
+                        </li>
+                        <li class="nav-item navList">
+                            <a class="nav-link active fs-2 fw-semibold" aria-current="page"
+                                href="#gotoContactUs">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" style="height: 70px;">
+                        <input class="form-control me-0 searchBox" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success searchBtn" style="width: 70px;" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="mobileMenu"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    <img src="images/agamiAgriLogo.png" alt="" width="200px">
+                </h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown navList">
+                        <a class="nav-link dropdown-toggle" href="#servicesSection" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="vegetables.html">Vegetables</a></li>
+                            <li><a class="dropdown-item" href="fruits.html">Fruits</a></li>
+                            <li><a class="dropdown-item" href="dairy.html">Dairy Products</a></li>
+                            <li><a class="dropdown-item" href="dryfruits.html">Dry Fruits</a></li>
+                            <li><a class="dropdown-item" href="grains.html">Grains</a></li>
+                            <li><a class="dropdown-item" href="pulses.html">Pulses</a></li>
+                            <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
+                            <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>
+                            <li><a class="dropdown-item" href="herbs.html">Herbs & Spices</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#gotoAbout">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#gotoContactUs">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </header>
+    <!-- Carousel -->
+    <div class="carousel slide" id="carouselExampleIndicators" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active"><img src="images/shopbk1.png" class="d-block w-100" alt=""></div>
+            <div class="carousel-item"><img src="images/shopbk2.png" class="d-block w-100" alt=""></div>
+            <div class="carousel-item"><img src="images/shopbk3.png" class="d-block w-100" alt=""></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Category Cards -->
+    <section id="products" class="section my-5">
+        <h2 class="text-center mb-4">Our Categories</h2>
+        <div class="circle-cards d-flex flex-wrap justify-content-center gap-4">
+            <a href="vegetables.html" class="circle-card text-center text-decoration-none">
+                <img src="images/vegitable.jpg" alt="Vegetables">
+                <p>Vegetables</p>
+            </a>
+            <a href="fruits.html" class="circle-card text-center text-decoration-none">
+                <img src="images/fruits.jpg" alt="Fruits">
+                <p>Fruits</p>
+            </a>
+            <a href="dairy.html" class="circle-card text-center text-decoration-none">
+                <img src="images/daairy_product.jpg" alt="Dairy">
+                <p>Dairy Products</p>
+            </a>
+            <a href="beverages.html" class="circle-card text-center text-decoration-none">
+                <img src="images/Bevarage.jpg" alt="Beverages">
+                <p>Beverages</p>
+            </a>
+            <a href="dryfruits.html" class="circle-card text-center text-decoration-none">
+                <img src="images/dry fruits.jpg" alt="Dry Fruits">
+                <p>Dry Fruits</p>
+            </a>
+            <a href="grains.html" class="circle-card text-center text-decoration-none">
+                <img src="images/Grains.jpg" alt="Grains">
+                <p>Grains</p>
+            </a>
+            <a href="snacks.html" class="circle-card text-center text-decoration-none">
+                <img src="images/snakas.jpg" alt="Snacks">
+                <p>Snacks</p>
+            </a>
+            <a href="pulses.html" class="circle-card text-center text-decoration-none">
+                <img src="images/pulses.jpg" alt="Pulses">
+                <p>Pulses</p>
+            </a>
+            <a href="herbs.html" class="circle-card text-center text-decoration-none">
+                <img src="images/herbs.jpg" alt="Herbs & Spices">
+                <p>Herbs & Spices</p>
+            </a>
+        </div>
+    </section>
+
+    <div class="container my-4">
+        <!-- Vegetables -->
+        <h2 class="section-title">Vegetables</h2>
+        <a href="#" class="see-all">See All</a>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/onion.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Onion</h5>
+                        <p class="price">₹36 <span class="old-price">₹48</span><span class="save">SAVE ₹12</span></p>
+                        <small>1 kg/900-100 g</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/cabega.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Cabbage</h5>
+                        <p class="price">₹27 <span class="old-price">₹37</span><span class="save">SAVE ₹10</span></p>
+                        <small>1 kg/900-100 g</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/tomato.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Tomato</h5>
+                        <p class="price">₹23 <span class="old-price">₹30</span><span class="save">SAVE ₹7</span></p>
+                        <small>1 kg/900-100 g</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/carrote.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Carrot</h5>
+                        <p class="price">₹67 <span class="old-price">₹89</span><span class="save">SAVE ₹22</span></p>
+                        <small>200 g</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/cucumbar.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Cucumber</h5>
+                        <p class="price">₹67 <span class="old-price">₹89</span><span class="save">SAVE ₹22</span></p>
+                        <small>500 g</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fruits -->
+        <h2 class="section-title">Fresh Fruits</h2>
+        <a href="#" class="see-all">See All</a>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/orange.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Orange</h5>
+                        <p class="price">₹28 <span class="old-price">₹35</span><span class="save">SAVE ₹7</span></p>
+                        <small>1 kg </small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <div class="card-body">
+                        <img src="images/mango.jpg" alt="">
+                        <h5 class="card-title">Mangoes</h5>
+                        <p class="price">₹180 <span class="old-price">₹250</span><span class="save">SAVE ₹70</span></p>
+                        <small>1 kg </small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/apple.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple</h5>
+                        <p class="price">₹150 <span class="old-price">₹200</span><span class="save">SAVE ₹50</span></p>
+                        <small>1 kg </small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/banana.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Banana</h5>
+                        <p class="price">₹59 <span class="old-price">₹80</span><span class="save">SAVE ₹21</span></p>
+                        <small>1 kg </small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dry Fruits -->
+        <h2 class="section-title">Dry Fruits</h2>
+        <a href="#" class="see-all">See All</a>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/almond.jpg" class="card-img-top" alt="Almonds">
+                    <div class="card-body">
+                        <h5 class="card-title">Almonds</h5>
+                        <p class="price">₹499 <span class="old-price">₹600</span><span class="save">SAVE ₹101</span></p>
+                        <small>500 g </small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/cashwas.jpg" class="card-img-top" alt="Cashews">
+                    <div class="card-body">
+                        <h5 class="card-title">Cashews</h5>
+                        <p class="price">₹650 <span class="old-price">₹800</span><span class="save">SAVE ₹150</span></p>
+                        <small>400 g </small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/walnats.jpg" class="card-img-top" alt="Walnuts">
+                    <div class="card-body">
+                        <h5 class="card-title">Walnuts</h5>
+                        <p class="price">₹720 <span class="old-price">₹900</span><span class="save">SAVE ₹180</span></p>
+                        <small>1 kg </small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/pistochs.jpg" alt="Pistachio">
+                    <div class="card-body">
+                        <h5 class="card-title">Pistachio</h5>
+                        <p class="price">₹850 <span class="old-price">₹1000</span><span class="save">SAVE ₹15
+                                0
+                            </span></p>
+
+                        <small>1 kg </small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- pulses -->
+
+        <h2 class="section-title">Pulses</h2>
+        <a href="#" class="see-all">See All</a>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/tur dal.jpg" class="card-img-top" alt="Toor Dal">
+                    <div class="card-body">
+                        <h5 class="card-title">Toor Dal</h5>
+                        <p class="price">₹120 <span class="old-price">₹150</span><span class="save">SAVE ₹30</span></p>
+                        <small>1 kg</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/moong dal.jpg" class="card-img-top" alt="Moong Dal">
+                    <div class="card-body">
+                        <h5 class="card-title">Moong Dal</h5>
+                        <p class="price">₹95 <span class="old-price">₹120</span><span class="save">SAVE ₹25</span></p>
+                        <small>1 kg</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/chana dal.jpg" class="card-img-top" alt="Chana Dal">
+                    <div class="card-body">
+                        <h5 class="card-title">Chana Dal</h5>
+                        <p class="price">₹80 <span class="old-price">₹100</span><span class="save">SAVE ₹20</span></p>
+                        <small>1 kg</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/urd dal.jpg" class="card-img-top" alt="Urad Dal">
+                    <div class="card-body">
+                        <h5 class="card-title">Urad Dal</h5>
+                        <p class="price">₹110 <span class="old-price">₹140</span><span class="save">SAVE ₹30</span></p>
+                        <small>1 kg</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- dairy product -->
+        <h2 class="section-title">Dairy Products</h2>
+        <a href="#" class="see-all">See All</a>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/milk.jpg" class="card-img-top" alt="Milk">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Milk</h5>
+                        <p class="price">₹50 <span class="old-price">₹60</span><span class="save">SAVE ₹10</span></p>
+                        <small>1 Litre</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/butter.jpg" class="card-img-top" alt="Butter">
+                    <div class="card-body">
+                        <h5 class="card-title">Butter</h5>
+                        <p class="price">₹200 <span class="old-price">₹250</span><span class="save">SAVE ₹50</span></p>
+                        <small>500 g</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/curd.jpg" class="card-img-top" alt="Curd">
+                    <div class="card-body">
+                        <h5 class="card-title">Curd</h5>
+                        <p class="price">₹60 <span class="old-price">₹80</span><span class="save">SAVE ₹20</span></p>
+                        <small>1 kg</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/chees.jpg" class="card-img-top" alt="Cheese">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheese</h5>
+                        <p class="price">₹280 <span class="old-price">₹320</span><span class="save">SAVE ₹40</span></p>
+                        <small>500 g</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- grains -->
+        <h2 class="section-title">Grains</h2>
+        <a href="#" class="see-all">See All</a>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/basmati rice.jpg" class="card-img-top" alt="Rice">
+                    <div class="card-body">
+                        <h5 class="card-title">Basmati Rice</h5>
+                        <p class="price">₹90 <span class="old-price">₹120</span><span class="save">SAVE ₹30</span></p>
+                        <small>1 kg</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/wheet.jpg" class="card-img-top" alt="Wheat">
+                    <div class="card-body">
+                        <h5 class="card-title">Wheat</h5>
+                        <p class="price">₹45 <span class="old-price">₹60</span><span class="save">SAVE ₹15</span></p>
+                        <small>1 kg</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/jowari.jpg" class="card-img-top" alt="Jowar">
+                    <div class="card-body">
+                        <h5 class="card-title">Jowar</h5>
+                        <p class="price">₹40 <span class="old-price">₹55</span><span class="save">SAVE ₹15</span></p>
+                        <small>1 kg</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card product-card">
+                    <img src="images/jawari.jpg" class="card-img-top" alt="Bajra">
+                    <div class="card-body">
+                        <h5 class="card-title">Bajra</h5>
+                        <p class="price">₹38 <span class="old-price">₹50</span><span class="save">SAVE ₹12</span></p>
+                        <small>1 kg</small>
+                        <button class="btn btn-custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+
+        <!-- Cart Panel -->
+        <div id="cart-panel" class="cart-panel">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <span class="close-btn" onclick="toggleCart()">✖</span>
+            </div>
+            <ul id="cart-items"></ul>
+            <h4>Total: ₹<span id="total-price">0</span></h4>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+
+
+
+
+
+    </div>
+
+    <!-- Cart Panel -->
+    <div id="cart-panel" class="cart-panel">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <span class="close-btn" onclick="toggleCart()">✖</span>
+        </div>
+        <ul id="cart-items"></ul>
+        <h4>Total: ₹<span id="total-price">0</span></h4>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid footer1 mt-5">
+        <div class="row text-center py-4">
+            <div class="col"><img src="images/agamiAgriLogo.png" width="230px" height="200px"></div>
+            <div class="col">
+                <h3>Agami Agri</h3>
+                <ul class="list-unstyled">
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Super Market</h3>
+                <ul class="list-unstyled">
+                    <li>Vegetables</li>
+                    <li>Fruits</li>
+                    <li>Dairy Products</li>
+                    <li>Grains</li>
+                </ul>
+            </div>
+            <div class="col">
+                <i class="fa-brands fa-instagram m-2 fs-1"></i>
+                <i class="fa-brands fa-youtube m-2 fs-1"></i>
+                <i class="fa-brands fa-facebook m-2 fs-1"></i>
+                <i class="fa-brands fa-linkedin m-2 fs-1"></i>
+                <i class="fa-brands fa-github m-2 fs-1"></i>
+                <i class="fa-brands fa-square-twitter m-2 fs-1"></i>
+            </div>
+        </div>
+    </footer>
+    <footer class="pt-3 foot text-center">
+        <h4>© 2025 Agami Agri</h4>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
